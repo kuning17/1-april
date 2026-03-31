@@ -1,0 +1,22 @@
+{
+  "name": "remotion-motion-graphics-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Professional Remotion + TypeScript project for generating a 10s motion graphics MP4",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render src/index.ts MainComposition out/video.mp4",
+    "render:pro": "remotion render src/index.ts MainComposition out/video-pro.mp4 --codec=h264 --crf=18 --concurrency=4 --audio-codec=aac",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.339"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.7.2"
+  }
+}
