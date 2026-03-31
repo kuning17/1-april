@@ -1,6 +1,6 @@
 import type {FC} from 'react';
 import {interpolate, useCurrentFrame} from 'remotion';
-import {smoothProgress} from '../utils/animation';
+import {smoothProgress} from '@/utils';
 
 type LoadingBarProps = {
   startFrame?: number;

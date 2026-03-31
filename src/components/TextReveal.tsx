@@ -1,6 +1,6 @@
 import type {FC} from 'react';
 import {Easing, interpolate, useCurrentFrame} from 'remotion';
-import {fadeInOut} from '../utils/animation';
+import {fadeInOut} from '@/utils';
 
 type TextRevealProps = {
   text: string;

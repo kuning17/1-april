@@ -1,6 +1,5 @@
 import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
-import {LoadingBar} from '../components/LoadingBar';
-import {TextReveal} from '../components/TextReveal';
+import {LoadingBar, TextReveal} from '@/components';
 
 export const MainComposition = () => {
   const frame = useCurrentFrame();

@@ -98,3 +98,25 @@ Contoh opsi yang dipakai:
 - Utility animasi reusable untuk menghindari duplikasi
 - Seluruh animasi memakai `interpolate`, `useCurrentFrame`, dan easing
 - Struktur siap dikembangkan untuk multi-scene video generator
+
+## 9) Import Lebih Mudah (Alias + Barrel Exports)
+
+Supaya import lebih rapi, project ini mendukung:
+
+- Alias `@` → `src`
+- Barrel exports (`index.ts`) di folder `components`, `compositions`, dan `utils`
+
+Contoh sebelum:
+
+```ts
+import {LoadingBar} from '../components/LoadingBar';
+import {TextReveal} from '../components/TextReveal';
+```
+
+Contoh sesudah:
+
+```ts
+import {LoadingBar, TextReveal} from '@/components';
+```
+
+Ini membuat penambahan komponen "motion" baru jauh lebih mudah karena kamu cukup export dari `src/components/index.ts`, lalu import dari satu tempat.

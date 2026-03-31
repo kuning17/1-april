@@ -1,5 +1,5 @@
 import {Composition} from 'remotion';
-import {MainComposition} from './compositions/MainComposition';
+import {MainComposition} from '@/compositions';
 
 export const Root = () => {
   return (
