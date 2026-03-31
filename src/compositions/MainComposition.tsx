@@ -1,5 +1,5 @@
 import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
-import {LoadingBar, TextReveal} from '@/components';
+import {LoadingBar, SearchBarMotion, TextReveal} from '@/components';
 
 export const MainComposition = () => {
   const frame = useCurrentFrame();
@@ -29,6 +29,13 @@ export const MainComposition = () => {
         }}
       >
         <TextReveal text="Generating Motion Graphics" />
+
+        <SearchBarMotion
+          query="How to build animated videos with Remotion"
+          startFrame={110}
+          typingDuration={250}
+          width={1200}
+        />
 
         <LoadingBar startFrame={40} endFrame={520} width={1100} />
 

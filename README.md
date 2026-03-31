@@ -39,6 +39,7 @@ npm run dev
     ├── Root.tsx
     ├── components
     │   ├── LoadingBar.tsx
+    │   ├── SearchBarMotion.tsx
     │   └── TextReveal.tsx
     ├── compositions
     │   └── MainComposition.tsx
@@ -53,6 +54,7 @@ npm run dev
 - `src/compositions/MainComposition.tsx` → Scene utama video
 - `src/components/LoadingBar.tsx` → Komponen animasi progress bar
 - `src/components/TextReveal.tsx` → Komponen teks fade + slide
+- `src/components/SearchBarMotion.tsx` → Komponen search bar dengan animasi typing + cursor blink
 - `src/utils/animation.ts` → Utility reusable untuk easing/progress/fade
 
 ## 5) Video Specs (Sesuai Requirement)
