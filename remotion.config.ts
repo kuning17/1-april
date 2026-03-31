@@ -1,4 +1,4 @@
-import {Config} from 'remotion';
+import {Config} from '@remotion/cli/config';
 
 // Central place for project-wide video / rendering defaults.
 Config.setVideoImageFormat('jpeg');
