@@ -1,5 +1,5 @@
 import {AbsoluteFill} from 'remotion';
-import {LoadingBar, SearchBarMotion, TextReveal} from '@/components';
+import {GoldCoinSpin, LoadingBar, SearchBarMotion, TextReveal} from '@/components';
 
 export const MainComposition = () => {
   return (
@@ -18,9 +18,11 @@ export const MainComposition = () => {
           justifyContent: 'center',
           alignItems: 'center',
           flexDirection: 'column',
-          gap: 36,
+          gap: 32,
         }}
       >
+        <GoldCoinSpin startFrame={70} size={170} spinSpeed={18} />
+
         <TextReveal text="Generating Motion Graphics" />
 
         <SearchBarMotion

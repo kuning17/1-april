@@ -38,6 +38,7 @@ npm run dev
     ├── index.ts
     ├── Root.tsx
     ├── components
+    │   ├── GoldCoinSpin.tsx
     │   ├── LoadingBar.tsx
     │   ├── SearchBarMotion.tsx
     │   └── TextReveal.tsx
@@ -52,6 +53,7 @@ npm run dev
 - `src/index.ts` → Entry Remotion (`registerRoot`)
 - `src/Root.tsx` → Mendaftarkan komposisi utama dan video specs
 - `src/compositions/MainComposition.tsx` → Scene utama video
+- `src/components/GoldCoinSpin.tsx` → Komponen animasi koin emas berputar (spin)
 - `src/components/LoadingBar.tsx` → Komponen animasi progress bar
 - `src/components/TextReveal.tsx` → Komponen teks fade + slide
 - `src/components/SearchBarMotion.tsx` → Komponen search bar dengan animasi typing + cursor blink
@@ -133,3 +135,13 @@ Kalau ingin render lebih ringan / lebih cepat:
 - Sederhanakan komponen loading bar (tanpa shimmer layer)
 
 Perubahan ini sudah diterapkan pada template saat ini agar lebih hemat proses render.
+
+
+## 12) Motion Baru: Gold Coin Spin
+
+Komponen `GoldCoinSpin` sudah ditambahkan ke scene utama.
+
+Fitur animasi:
+- Koin berputar terus (`spinSpeed`)
+- Efek ketebalan koin via `scaleX` saat sisi koin menghadap kamera
+- Entrance halus dengan fade + slide
