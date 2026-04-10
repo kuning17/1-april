@@ -122,3 +122,14 @@ import {LoadingBar, TextReveal} from '@/components';
 ```
 
 Ini membuat penambahan komponen "motion" baru jauh lebih mudah karena kamu cukup export dari `src/components/index.ts`, lalu import dari satu tempat.
+
+
+## 11) Mode Ringan (opsional)
+
+Kalau ingin render lebih ringan / lebih cepat:
+
+- Gunakan background statis (tanpa animasi gradient per frame)
+- Hapus efek visual mahal seperti `backdrop-filter` dan bayangan besar
+- Sederhanakan komponen loading bar (tanpa shimmer layer)
+
+Perubahan ini sudah diterapkan pada template saat ini agar lebih hemat proses render.

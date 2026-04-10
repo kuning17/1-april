@@ -1,19 +1,12 @@
-import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
+import {AbsoluteFill} from 'remotion';
 import {LoadingBar, SearchBarMotion, TextReveal} from '@/components';
 
 export const MainComposition = () => {
-  const frame = useCurrentFrame();
-
-  // Animate subtle background movement to avoid static visuals.
-  const gradientShift = interpolate(frame, [0, 600], [0, 100], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-
   return (
     <AbsoluteFill
       style={{
-        background: `radial-gradient(circle at ${30 + gradientShift * 0.4}% ${35 + gradientShift * 0.2}%, #1a2a6c 0%, #0a0f1f 48%, #03040a 100%)`,
+        // Static gradient is cheaper to render than frame-by-frame animated background.
+        background: 'radial-gradient(circle at 40% 38%, #1a2a6c 0%, #0a0f1f 48%, #03040a 100%)',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

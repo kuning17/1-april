@@ -43,24 +43,22 @@ export const SearchBarMotion: FC<SearchBarMotionProps> = ({
     <div
       style={{
         width,
-        height: 88,
-        borderRadius: 44,
-        border: '1px solid rgba(255,255,255,0.25)',
-        backgroundColor: 'rgba(9, 14, 30, 0.72)',
+        height: 82,
+        borderRadius: 41,
+        border: '1px solid rgba(255,255,255,0.2)',
+        backgroundColor: 'rgba(9, 14, 30, 0.9)',
         display: 'flex',
         alignItems: 'center',
         padding: '0 30px',
-        boxShadow: '0 18px 40px rgba(0,0,0,0.35)',
-        backdropFilter: 'blur(8px)',
         opacity,
         transform: `translateY(${translateY}px)`,
       }}
     >
       <span
         style={{
-          fontSize: 34,
-          marginRight: 18,
-          opacity: 0.9,
+          fontSize: 30,
+          marginRight: 16,
+          opacity: 0.85,
         }}
       >
         🔎
@@ -72,11 +70,10 @@ export const SearchBarMotion: FC<SearchBarMotionProps> = ({
           color: '#ffffff',
           fontFamily:
             "Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif",
-          fontSize: 38,
-          letterSpacing: 0.4,
+          fontSize: 34,
+          letterSpacing: 0.3,
           whiteSpace: 'nowrap',
           overflow: 'hidden',
-          textOverflow: 'clip',
           flex: 1,
         }}
       >
